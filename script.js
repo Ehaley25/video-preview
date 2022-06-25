@@ -1,8 +1,10 @@
 console.log("page loaded...");
 
+let myVideo = document.getElementById("mainVideo")
+
 function playVideo(element){
-    element.play()
-}
-function pauseVideo(element){
-    element.pause()
+    if (myVideo.paused)
+        element.play();
+    else
+        element.pause();
 }
